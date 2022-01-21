@@ -14,7 +14,7 @@
     transform: translate(0, 39%);
     width: 460px;
     height: 350px;
-    background: lightblue;
+    background: rgb(213, 233, 240);
     border-radius: 20px;
     border: 3px solid rgb(0, 0, 0);
     box-shadow: rgb(0 0 0) 4px 4px 0px;
@@ -29,20 +29,21 @@
 
 .header h4 {
     font-size: 16px;
-    font-family: Monserrat, sans-serif;
+    font-family: Monserrat,sans-serif;
     font-weight: 500;
 }
 
 .header b {
     font-size: 16px;
-    font-family: Monserrat, sans-serif;
+    font-family: Monserrat,sans-serif;
     font-weight: 500;
 }
 .header .setting img:hover {
-    transform: rotate(180deg);
-    transition: 0.3s;
+    transform: rotate(360deg);
+    transition: 0.4s;
     cursor: pointer;
 }
+
 
 .setting img {
     margin-left: 5px;
@@ -58,8 +59,8 @@
     margin-top: -20px;
     margin-left: 13px;
     padding: 5px;
-    background: white;
-    border: 2px solid skyblue;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(175, 203, 218);
     border-radius: 20px;
 }
 .main_content input {
@@ -78,19 +79,24 @@
     margin-right: -15px;
 }
 
-.crypto select {
+.crypto button {
     width: 130px;
     height: 40px;
     border: none;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: lightblue;
     color: black;
-    padding: 5px;
-    font-size: 16px;
+    margin-left: 10px;
+    padding: 0 12px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
 }
-.crypto select:hover {
+
+.crypto button:hover {
     background-color: darkorange;
 }
 
@@ -103,23 +109,29 @@
     margin-top: 5px;
     margin-left: 13px;
     padding: 20px;
-    background: white;
-    border: 2px solid skyblue;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(175, 203, 218);
     border-radius: 20px;
 }
 
-.select select {
+.select button {
     width: 170px;
     height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: none;
     border-radius: 20px;
-    background: lightsalmon;
+    background-color: rgb(255, 120, 74);
     color: black;
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
     font-weight: 600;
-    margin-left: -15px;
+    margin-left: -3px;
     cursor: pointer;
+}
+.select button option {
+    padding: 10px;
 }
 
 .main_content p {
@@ -136,7 +148,7 @@
     margin-top: 25px;
     margin-left: 13px;
     padding: 20px;
-    background: lightsalmon;
+    background-color: rgb(255, 120, 74);
     border-radius: 20px;
     font-size: 18px;
     font-weight: 600;
@@ -147,27 +159,36 @@
     box-shadow: none;
     transform: scale(0.9);
     transition: 0.3s;
-}
-
-.connect button:hover {
-    box-shadow: none;
-    transform: translate(5px, 5px);
-    transition: 0.3s;
     cursor: url('../../images/cow-swap/cursor1.gif'), auto;
     animation: 1s ease 0s infinite normal none running cursor;
 }
 
+.connect button:hover {
+    box-shadow: none;
+    transform: translate(5px,5px);
+    transition: 0.3s;
+}
+
 .down b {
     position: absolute;
-    background: white;
-    border: 2px solid skyblue;
-    border-radius: 12px;
-    padding: 4px 2px 4px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
-    transform: translate(215px, 135px);
+    transform: translate(215px, 138px);
+    background: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(175, 203, 218);
+    border-radius: 9px;
+    padding: 0;
     cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: right center;
+    transition: transform 0.25s ease 0s;
 }
+
 
 .second-input:placeholder {
     font-weight: bold;

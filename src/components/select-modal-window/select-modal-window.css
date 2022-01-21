@@ -1,7 +1,7 @@
 .modal {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@
 
 .modal__content h1 {
     font-size: 35px;
-    padding: 10px;
+    margin: 15px;
     font-family: Monserrat, sans-serif;
 }
 .modal__content .select-input input {
@@ -82,12 +82,12 @@
     font-family: Monserrat, sans-serif;
 }
 
-.modal__content .link a:hover {
+.modal__content .link:hover {
     color: grey;
     opacity: 0.8;
 }
-
 .question {
     margin-left: 15px;
     margin-bottom: -5px;
 }
+

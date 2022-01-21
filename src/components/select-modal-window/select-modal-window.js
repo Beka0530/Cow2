@@ -18,7 +18,10 @@ const SelectModalWindow = ({ active, setActive }) => {
                 <div className='header'>
                     <h1>Select a token</h1>
                     <img
-                        style={{ cursor: 'pointer' }}
+                        style={{
+                            cursor:"pointer",
+                            margin: '15px'
+                        }}
                         onClick={exitModal}
                         width='40px'
                         height='40px'
@@ -49,7 +52,8 @@ const SelectModalWindow = ({ active, setActive }) => {
                     <button>WBTC</button>
                     <button>WETH</button>
                 </div>
-                <div className='all-wallet'></div>
+                <div className='all-wallet'>
+                </div>
                 <div className='link'>
                     <a href='#!'>
                         <img width='40px' height='40px' src={paper} alt='' />

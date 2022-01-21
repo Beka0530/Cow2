@@ -2,6 +2,7 @@ import React from 'react';
 import arrowDown from '../../images/svg/arrow-down-grey.svg';
 import setting from '../../images/svg/setting.svg';
 import './main-content.css';
+import selArrow from '../../images/svg/selArrow.svg'
 
 const MainContent = ({ setActive, setActive2 }) => {
     const SelectModal = () => {
@@ -21,10 +22,18 @@ const MainContent = ({ setActive, setActive2 }) => {
                     </div>
                 </div>
                 <div className='crypto'>
-                    <select onClick={() => SelectModal()}>
-                        <img src='' alt='' />
-                        <option value=''>WETH</option>
-                    </select>
+                    <button onClick={() => SelectModal()}>
+                        <img src="" alt=""/>
+                        <option value="0">
+                            WETH
+                        </option>
+                        <img
+                            width='15px'
+                            height='9px'
+                            src={selArrow}
+                            alt=""
+                        />
+                    </button>
                     <input
                         type='number'
                         placeholder='0.0'
@@ -46,10 +55,17 @@ const MainContent = ({ setActive, setActive2 }) => {
                     </b>
                 </div>
                 <div className='select'>
-                    <select onClick={() => SelectModal()}>
-                        <option value=''>Select a token</option>
-                        <img src='' alt='' />
-                    </select>
+                    <button onClick={() => SelectModal()}>
+                        <option value="">
+                            Select a token
+                        </option>
+                        <img
+                            width='15px'
+                            height='9px'
+                            src={selArrow}
+                            alt=""
+                        />
+                    </button>
                     <input
                         className='second-input'
                         inputMode='decimal'

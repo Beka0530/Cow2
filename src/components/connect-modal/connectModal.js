@@ -25,11 +25,7 @@ const ConnectModal = ({ active2, setActive2 }) => {
                         <a className='wall' href='#!'>
                             Connect a wallet
                         </a>
-                        <img
-                            style={{
-                                cursor: 'pointer',
-                                padding: '10px',
-                            }}
+                        <img className='exit'
                             onClick={() => exitModal()}
                             width='60px'
                             height='60px'
