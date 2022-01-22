@@ -39,7 +39,6 @@ a {
 .btn-bitcoin {
     width: 135px;
     margin: 12px;
-    background-color: red;
     height: 38px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
@@ -65,6 +64,7 @@ a {
     font-weight: 500;
     background-color: rgb(255, 120, 74);
     border: 1px solid rgb(255, 120, 74);
+    cursor: pointer;
 }
 .connect-btn {
     color: rgb(0, 0, 0);

@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 10px 10px 30px 30px;
 }
 
 .header h4 {
@@ -69,6 +69,14 @@
     border: none;
     font-size: 25px;
     color: grey;
+    text-align: end;
+    font-family: "Inter var",sans-serif;
+}
+.crypto .inp-span  {
+    display: flex;
+    flex-direction: column;
+}
+.inp-span span {
     text-align: end;
 }
 .main_content input:focus {
