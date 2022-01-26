@@ -31,7 +31,7 @@ const MainContent = ({setActive, setActive2}) => {
                             src=""
                             alt=""
                         />
-                        <option value="0">
+                        <option value="">
                             WETH
                         </option>
                         <img

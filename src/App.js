@@ -6,8 +6,10 @@ import SelectModalWindow from './components/select-modal-window/select-modal-win
 import ConnectModal from './components/connect-modal/connectModal';
 
 function App() {
+
     const [modalActive, setModalActive] = useState(false);
     const [modalActive2, setModalActive2] = useState(false);
+    
 
     return (
         <div className='wrapper'>
